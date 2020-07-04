@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Servive Game</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container"><center><h1>Who Will Survive?</h1></center><br><br>
+	<center><h2 id="h2"></h2></center><br>
+	<input type="text" class="form-control" id="t1" placeholder="enter a number"><br>
+	<input type="text" class="form-control" id="t2" placeholder="enter a number"><br>
+	<center><button class="btn btn-success" onclick='x = text1();return false;'>Click here to enter <strong>Number-1</strong></button>&nbsp; &nbsp; &nbsp; 
+	<button class="btn btn-success" onclick='y = text2();return false;'>Click here to enter <strong>Number-2</strong></button>&nbsp; &nbsp; &nbsp; </center><br><br>
+	<center><button class="btn btn-primary" onclick='document.getElementById("demo").innerHTML = gamecheck(x,y);return false;'>Click here to know the <strong>Winner</strong></button></center><br><br><br>
+	<center><h2 id="demo">winner is</h2></center>
+</div>
+<script src="all.js"></script>
+</body>
+</html>

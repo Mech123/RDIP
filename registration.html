@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      function passvalues(){
+      var FN=document.getElementById("firstname").value();
+      var EM=document.getElementById("Email").value();
+      var PN=document.getElementById("Phone No").value();
+      var GR=document.getElementById("gender").value();
+      var RDIP=document.getElementById("RDIP").value();
+      var C=document.getElementById("college").value();
+      localStorage=setItem("k1",FN);
+      localStorage=setItem("k2",EM);
+      localStorage=setItem("k3",PN);
+      localStorage=setItem("k4",GR);
+      localStorage=setItem("k5",RDIP);
+      localStorage=setItem("k6",C);
+      return false;
+      }
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css\style.css"/>
+
+    <title> LEARN CODE WITH PRANATHI</title>
+    <style> 
+        body{
+  font-family: "Source Serif Pro", serif;
+       }
+       
+
+    </style> 
+  </head>
+  <body >
+    <div class="container">
+    
+    <h2 class="text-center">REGISTRATION PAGE:</h2>
+    
+ <h3  class="text-right" style="color:blue;"><a href="https://www.google.com">
+<u  >RDIP</u></a></h3> 
+    <img   src="https://www.iiit.ac.in/img/iiit-new.png" alt="logo" height="50" width="100"> 
+<br><br>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          
+  <a class="navbar-brand" href="homepage.html"><h5>Home</h5></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="navbar-brand" href="#"><h5>Registration Form</h5></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></sspan>
+  </button>
+  
+  </nav>
+<form action="details.html" method="POST" >
+  <pre><b>
+  <label for="firstname">First Name:           <input type="text" id="firstname" name="firstname"/> <br/></label>
+                
+  <label for="Email">Email:                <input type="text" id="Email" name="Email"/> <br/></label>
+             
+  <label for="Phone no">Phone No:             <input type="text" id="Phone No" name="Phone No"/> <br/> </label>             
+  <label for="gender">Gender:               <input type="radio" id="gender" name="male" value="Male"/> Male  <input type="radio" id= "gender" name="female" value="Female"/> Female <input type="radio" id="gender" name="other" value="other"/> Other   </label><br/>
+  <label for="Reason for RDIP">Reason for RDIP:      <input type="radio" id="RDIP" name="html" value="HTML"/> HTML  <input type="radio" id= "RDIP" name="css" value="CSS"/> CSS <input type="radio" id="RDIP" name="javascript" value="JavaScript"/> JavaScript  </label> <br/>
+  <label for="college">College:              <input type="text" id="College" name="College"/></label> <br/><br/>
+  <input type="checkbox" id="v1" name="v1" value="v1"><label for="v1">       I Declare above details given by me are True</label></b><br/></b><div class="row"><div class="col-sm-12 text-center">            
+  <input type="submit" class="btn btn-primary btn-md" onclick="passvalues();" value="submit" />       <input type="submit" class="btn btn-primary btn-md" value="Reset"/></div></div></pre>
+
+</form>
+  </body>
+  </html>

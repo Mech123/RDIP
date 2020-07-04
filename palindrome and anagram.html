@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome and anagram</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<div class="container"><h1>Palindrome Check</h1><br><br>
+		<form name="dis">
+		<div class="col-sm-6">
+
+		<input type="text" class="form-control" placeholder="Enter text" name="txt" id="txt"><br></div>
+		<button class="btn btn-success" onclick='y = palindrome(document.dis.txt.value);if(y) document.getElementById("p1").innerHTML="HURRAY! The given string is PALINDROME";else document.getElementById("p1").innerHTML="OOPS! The given string NOT PALINDROME";
+		return false;'>Click here to check <strong>Palindrome/not</strong></button><br><br>
+		<div class="alert alert-info" id="p1">Wait for the result</div>
+	</form>
+	</div>
+	
+	<div class="container"><h1>Anagram Check</h1><br><br>
+		<form name="dis1">
+		<div class="col-sm-6">
+
+		<input type="text" class="form-control" placeholder="Enter text" name="txt1" id="txt1"></div>
+		<div class="col-sm-6">
+		<input type="text" class="form-control" placeholder="Enter text" name="txt2" id="txt2"></div><br><br><br>
+		<center><button class="btn btn-success" onclick='x = anagram(document.dis1.txt1.value,document.dis1.txt2.value);if(x)
+		document.getElementById("p2").innerHTML="The given Strings are Anagrams";else document.getElementById("p2").innerHTML="The given Strings are not anagrams";return false;'>Click here to check <strong>Anagrams/not</strong></button></center><br><br>
+		<div class="alert alert-warning" id="p2">The given strings are..</div>
+	</form>
+	</div>
+<script src="all.js"></script>
+</body>
+</html>
